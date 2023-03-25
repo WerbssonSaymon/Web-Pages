@@ -1,0 +1,67 @@
+/*Credits to Tahmid Ahmed channel  link: https://www.youtube.com/@tahmidahmed-yt */
+/*Estilo css*/
+* {
+	box-sizing: border-box;
+}
+.hero { 
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+nav { /*Alinhamento do menu*/
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.logo {
+	font-size: 26pt;
+	color: White;
+}
+span {
+	color: #ea1538; 
+}
+nav ul li { /*Alinhamento do menu*/
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 40px;
+	font-size: 14pt;
+	font-family: sans-serif;
+}
+nav ul li a {
+	color: White;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav ul li a:hover { /*Mudança de cor do menu*/
+	color: #ea1538;
+	transition: .5s;
+}
+button {
+	border: none;
+	border-radius: 30px;
+	padding: 12px 30px;
+	background-color: #ea1538;
+	color:White;
+	font-weight: bold;
+	font-size: 16pt;
+	transition: .5s;
+}
+button:hover { /*Efeito de crescimento do botão*/
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.cite {
+	color: White;
+	text-align: center;
+	font-size: 16pt;
+	padding: 2px;
+}
+#one {
+	margin-top: 350px;
+}
+
