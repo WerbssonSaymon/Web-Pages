@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #000;
+	background-image: url('t-w-d.jpg');
+	background-size: cover;
+}
+
+header {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+span {
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px #000;
+	padding: 5px 0;
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Anton', sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-auto-flow: column;
+}
+.content1, .content2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50vw;
+	height: 100vh;
+}
+
+h1, p {
+	color: #fff;
+	text-align: justify;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px #000;
+}
+
+h1 {
+	font-size: 65px;
+	margin-top: 5px;
+	font-family: 'Anton', sans-serif;
+}
+
+h2 {
+	color: red;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	word-spacing: 15px;
+	text-shadow: 2px 2px 5px #000;
+	font-family: 'Anton', sans-serif;
+}
+
+p {
+	margin: 10px 25%;
+	line-height: 1.5;
+}
+
+button {
+	margin-top: 10px;
+	padding: 10px 15px;
+	width: 28%;
+	background-color: red;
+	color: #fff;
+	font-size: 28px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: red;
+}
