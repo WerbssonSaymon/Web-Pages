@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartphone</title>
+    <!-- Biblioteca AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+    <header>News Smartphones</header>
+    <main class="container">
+        <section class="container__section--white">
+            <h2 
+            data-aos="fade-right" data-aos-duration="2000" data-aos-mirror="true">Texto interativo</h2>
+            <img src="assets/phone-1.png" alt="phone"
+            data-aos="fade-left" data-aos-duration="3000" data-aos-mirror="true">
+        </section>
+        <section class="container__section--black">
+            <img src="assets/phone-2.png" alt="phone" 
+            data-aos="fade-down" data-aos-duration="3000" data-aos-mirror="true">
+            <h2 class="container__text--white"
+            data-aos="fade-up" data-aos-duration="2000" data-aos-mirror="true">Texto interativo</h2>
+        </section>
+        <section class="container__section--white">
+            <h2 
+            data-aos="fade-down" data-aos-duration="3000" data-aos-mirror="true">Texto interativo</h2>
+            <img src="assets/phone-3.png" alt="phone" 
+            data-aos="fade-up" data-aos-duration="3000" data-aos-mirror="true">
+        </section>
+        <section class="container__section--black">
+            <img src="assets/phone-4.png" alt="phone" 
+            data-aos="zoom-in" data-aos-duration="3000" data-aos-mirror="true">
+            <h2 class="container__text--white" 
+            data-aos="zoom-out-down" data-aos-duration="3000" data-aos-mirror="true">Texto interativo</h2>
+        </section>
+        <section class="container__section--white">
+            <h2 
+            data-aos="flip-up" data-aos-duration="3000" data-aos-mirror="true">Texto interativo</h2>
+            <img src="assets/phone-6.png" alt="phone" 
+            data-aos="flip-right" data-aos-duration="3000" data-aos-mirror="true">
+        </section>
     </main>
+    <!-- Biblioteca AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicia o AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
