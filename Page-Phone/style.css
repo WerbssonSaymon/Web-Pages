@@ -27,6 +27,15 @@ header {
     flex-direction: column;
 }
 
+.container__content {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .container__section--black,
 .container__section--white {
     width: 100vw;
@@ -52,6 +61,9 @@ img {
 
 h2 {
     margin: auto 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
 }
 
 .container__text--white {
