@@ -1,7 +1,9 @@
 :root {
-    --primary: blue;
-    --secondary: white;
-    --background: #081b29
+    --primary: #081b29;
+    --secondary: #ffffff;
+    --background-border: #fe0000;
+    --background-left: rgba(0,0,0,0.5);
+    --background-right: linear-gradient(131deg, rgba(254,0,0,1) 5%, rgba(237,37,37,1) 36%, rgba(154,8,8,1) 85%);
 }
 
 * {
@@ -15,7 +17,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--background);
+    background-color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +30,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border: 1px solid green;
+    border: 2px solid var(--background-border);
+    box-shadow: 0px 0px 35px var(--background-border);
 }
 
 .container__content {
@@ -36,12 +39,15 @@ body {
     height: 400px;
 }
 
-.content__left {
+.content__left, .content__right {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #000;
+}
+
+.content__left {
+    background-color: var(--background-left);
 }
 
 form {
@@ -56,7 +62,7 @@ form {
 input {
     height: 30px;
     margin: 10px 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--secondary);
     background-color: transparent;
     color: var(--secondary);
 }
@@ -65,26 +71,23 @@ button {
     width: 100%;
     padding: 10px;
     margin: 15px auto;
-    background-color: green;
     border-radius: 25px;
     cursor: pointer;
     font-size: 20px;
+    color: var(--secondary);
+    background: var(--background-right);
 }
 
-h1, h2, p {
+h1, h2, p , a {
     color: var(--secondary);
+    margin-bottom: 10px;
 }
 
 a {
     text-decoration: none;
-    color: var(--secondary);
 }
 
 .content__right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     text-align: right;
-    background-color: red;
+    background: var(--background-right);
 }
